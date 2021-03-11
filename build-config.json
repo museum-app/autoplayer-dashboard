@@ -1,0 +1,14 @@
+{
+  "asar": false,
+  "appId": "com.turarabu.code.eat",
+  "productName": "Electron app template",
+  "compression": "maximum",
+  "detectUpdateChannel": false,
+  "directories": {
+    "output": "./dist"
+  },
+  "files": [
+    "!dist",
+    "!build-config.json"
+  ]
+}

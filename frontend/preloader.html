@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='UTF-8'>
+    <title>Preloader</title>
+  </head>
+
+  <body>
+    <p id="status"></p>
+    <script>
+      const info = document.querySelector('#status')
+
+      ipc.on('status', setStatus)
+      // ipc.send('get-status').then(setStatus)
+
+      function setStatus (status) {
+        info.innerText = status
+      }
+    </script>
+  </body>
+</html>
